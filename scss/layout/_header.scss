@@ -1,21 +1,101 @@
 .header {
   background-color: #2F2F59;
+  color: #fff;
+  font-size: 14px;
+
+  &__logo {
+    display: block;
+  }
 
   &__inner {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+  }
+  
+  &__right-block {
+    display: flex;
+    align-items: center;
   }
 
+  &__lang {
+    margin-left: 83.5px;
+  }
+
+  &__mobile-menu {
+    display: none;
+    width: 75px;
+  }
+  
   &__navigation ul {
+    margin: 0;
     padding: 0;
-    color: #fff;
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+
+    li {
+      cursor: pointer;
+      margin-left: 33.5px;
+    }
   }
 
-  &__navigation li {
-
+  &__navigation ul li::after,
+  &__lang::after {
+    content: ''; 
+    position: absolute;
+    left: 50px;
+    top: 50px;
+  
+    width: 100px;
+    height: 100px;
+  
+    background-image: url('https://i.imgur.com/MJekAr4.gif');
+  
+    background-size: 100px 100px;
   }
 
+
+  &__auth,
+  &__basket,
+  &__burger {
+    width: 25px;
+    height: 25px;
+    outline: 1px solid #fff;
+    // position: relative;
+  }
+
+  // &__auth::before {
+  //   content: url('');
+
+  // }
+  // &__basket::before {
+  //   content: url('');
+
+  // }
+  // &__burger::before {
+  //   content: url('../../assets/icons/auth.svg');
+  // }
+}
+
+// @media (max-width: 768px) { 
+//   .header {
+//     &__navigation ul li,
+//     &__lang {
+//       margin-left: 23.5px;
+//     }
+//   }
+// }
+
+@media (max-width: 767px) {
+  .header {
+    &__right-block {
+      display: none;
+    }
+
+    &__mobile-menu {
+      display: flex;
+    }
+  }
 }
