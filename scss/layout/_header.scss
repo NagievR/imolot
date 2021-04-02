@@ -24,6 +24,7 @@
   }
 
   &__mobile-menu {
+    position: relative;
     display: none;
     width: 75px;
   }
@@ -43,36 +44,72 @@
 
   &__navigation ul li::after,
   &__lang::after {
-    content: ''; 
-    position: absolute;
-    left: 50px;
-    top: 50px;
-  
-    width: 100px;
-    height: 100px;
-  
-    background-image: url('https://i.imgur.com/MJekAr4.gif');
-  
-    background-size: 100px 100px;
+    content: 'x'; // url('../../assets/icons/nav-open-arrow-active.svg')
+    margin-left: 8px;
   }
+
+  &__burger {
+    cursor: pointer;
+    position: relative;
+    width: 24px;
+    height: 12px;
+  }
+  &__burger span,
+  &__burger::after,
+  &__burger::before {
+    content: '';
+    position: absolute;
+    background-color: red;
+    width: 100%;
+    height: 1px;
+  }
+
+  &__burger::after,
+  &__burger::before,
+  &__burger span {
+    background-color: #fff;
+  }
+
+  &__burger span {
+    bottom: 12px;
+  }
+  &__burger::after {
+    bottom: 5px;
+  }
+  &__burger::before {
+    top: 5px;
+  }
+  // &__burger::after {
+  //   transform: rotate(-45deg);
+  //   bottom: 8px;
+  // }
+  // &__burger::before {
+  //   transform: rotate(45deg);
+  //   top: 9px;
+  // }
+  // &__burger span {
+  //   transform: scale(0);
+  // }
 
 
   &__auth,
   &__basket,
   &__burger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 25px;
     height: 25px;
-    outline: 1px solid #fff;
-    // position: relative;
+    // outline: 1px solid #fff;
+    position: relative;
+
   }
 
   // &__auth::before {
   //   content: url('');
-
   // }
   // &__basket::before {
   //   content: url('');
-
   // }
   // &__burger::before {
   //   content: url('../../assets/icons/auth.svg');
