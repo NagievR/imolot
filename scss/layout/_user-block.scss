@@ -1,0 +1,22 @@
+.user-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 146px;
+
+  &__icon-favorites,
+  &__icon-basket,
+  &__icon-auth {
+    cursor: pointer;
+  }
+
+  &__icon-favorites {
+    margin: 0 6px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .user-block {
+    width: 120px;
+  }
+}
