@@ -14,19 +14,20 @@
     padding: 8px 0;
   }
   
-  &__right-block {
+  &__menu {
     display: flex;
     align-items: center;
   }
 
   &__lang {
+    cursor: pointer;
     margin-left: 83.5px;
   }
 
   &__mobile-menu {
     position: relative;
     display: none;
-    width: 75px;
+    width: 86px;
   }
   
   &__navigation ul {
@@ -44,8 +45,10 @@
 
   &__navigation ul li::after,
   &__lang::after {
-    content: 'x'; // url('../../assets/icons/nav-open-arrow-active.svg')
+    content: url('http://127.0.0.1:5500/molot-front/assets/icons/nav-open-arrow.svg');
     margin-left: 8px;
+    position: relative;
+    top: 3px;
   }
 
   &__burger {
@@ -71,63 +74,43 @@
   }
 
   &__burger span {
-    bottom: 12px;
+    bottom: 11px;
   }
   &__burger::after {
     bottom: 5px;
   }
   &__burger::before {
-    top: 5px;
+    top: 7px;
   }
-  // &__burger::after {
-  //   transform: rotate(-45deg);
-  //   bottom: 8px;
-  // }
-  // &__burger::before {
-  //   transform: rotate(45deg);
-  //   top: 9px;
-  // }
-  // &__burger span {
-  //   transform: scale(0);
-  // }
-
 
   &__auth,
   &__basket,
   &__burger {
+    margin-right: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 25px;
     height: 25px;
-    // outline: 1px solid #fff;
     position: relative;
-
+    &:last-child {
+      margin: 0;
+    }
   }
-
-  // &__auth::before {
-  //   content: url('');
-  // }
-  // &__basket::before {
-  //   content: url('');
-  // }
-  // &__burger::before {
-  //   content: url('../../assets/icons/auth.svg');
-  // }
 }
 
-// @media (max-width: 768px) { 
-//   .header {
-//     &__navigation ul li,
-//     &__lang {
-//       margin-left: 23.5px;
-//     }
-//   }
-// }
+@media (max-width: 1200px) { 
+  .header {
+    &__navigation ul li,
+    &__lang {
+      margin-left: 23.5px;
+    }
+  }
+}
 
 @media (max-width: 767px) {
   .header {
-    &__right-block {
+    &__menu {
       display: none;
     }
 

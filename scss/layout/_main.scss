@@ -1,0 +1,44 @@
+.main {
+
+  &__top-block-inner {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__test {
+    margin: 0 auto;
+    max-width: 950px;
+  }
+
+  &__bottom-block {
+    background-color: rgb(170, 170, 255);
+  }
+}
+
+// ====================
+
+.place-goods {
+  width: 200px;
+  height: 50px;
+  text-transform: uppercase;
+  border: 2px solid #FFC813;
+  border-radius: 4px;
+  outline: none;
+  background-color: inherit;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.user-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 146px;
+}
+
+.service-btn {
+  margin-right: 10px;
+}
+
