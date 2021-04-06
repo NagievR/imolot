@@ -1,0 +1,25 @@
+.slider {
+  padding: 0 20px;
+}
+
+.slider-inner {
+  max-width: 1170px;
+  background-color: rgba(234, 227, 210, 1); //0.29
+  height: 453px;
+  margin: 40px auto 50px auto;
+}
+
+@media (max-width: 1200px) {
+  .slider-inner {
+    width: 100%;
+    height: 312px;
+    margin: 30px auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .slider-inner {
+    height: 180px;
+    margin: 20px auto 50px auto;
+  }
+}

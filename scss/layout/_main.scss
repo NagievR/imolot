@@ -1,5 +1,9 @@
 .main {
 
+  &__top-block-wrap {
+    border-bottom: 1px solid #E0E0E0;
+  }
+
   &__top-block-inner {
     padding: 20px 0;
     display: flex;
@@ -13,6 +17,7 @@
   }
 
   &__bottom-block {
+    margin-top: 33px;
     background-color: rgb(170, 170, 255);
   }
 }
@@ -30,7 +35,6 @@
   cursor: pointer;
   font-size: 14px;
 }
-
 
 .service-btn {
   margin-right: 10px;

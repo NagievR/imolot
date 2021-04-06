@@ -10,10 +10,6 @@
   font-size: 14px;
 }
 
-.header__logo {
-  display: block;
-}
-
 .header__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -25,6 +21,10 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 8px 0;
+}
+
+.header__logo {
+  display: block;
 }
 
 .header__menu {
@@ -140,6 +140,10 @@
   }
 }
 
+.main__top-block-wrap {
+  border-bottom: 1px solid #E0E0E0;
+}
+
 .main__top-block-inner {
   padding: 20px 0;
   display: -webkit-box;
@@ -159,6 +163,7 @@
 }
 
 .main__bottom-block {
+  margin-top: 33px;
   background-color: #aaaaff;
 }
 
@@ -235,8 +240,6 @@
   position: relative;
   top: -1px;
   margin-left: 13px;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
 }
 
 @media (max-width: 1200px) {
@@ -279,6 +282,132 @@
   .user-block {
     width: 120px;
   }
+}
+
+.slider {
+  padding: 0 20px;
+}
+
+.slider-inner {
+  max-width: 1170px;
+  background-color: #eae3d2;
+  height: 453px;
+  margin: 40px auto 50px auto;
+}
+
+@media (max-width: 1200px) {
+  .slider-inner {
+    width: 100%;
+    height: 312px;
+    margin: 30px auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .slider-inner {
+    height: 180px;
+    margin: 20px auto 50px auto;
+  }
+}
+
+.search-form__form {
+  background-color: #F2F2F2;
+  border-radius: 4px;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.search-form__select-wrap {
+  position: relative;
+}
+
+.search-form__arrow-down {
+  position: absolute;
+  top: 23px;
+  right: 22px;
+}
+
+.search-form__right-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.search-form__user-input, .search-form__user-select {
+  border: 1px solid #BDBDBD;
+  background-color: inherit;
+  border-radius: 4px;
+}
+
+.search-form__user-select {
+  height: 52px;
+  border-right: none;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  width: 249px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  padding-left: 55px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.search-form__submit {
+  background-color: #FFC813;
+  height: 52px;
+  width: 147px;
+  border: none;
+  padding-right: 70px;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 0 69px 0 30px;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  position: relative;
+}
+
+.search-form__submit::after {
+  position: absolute;
+  content: url("http://127.0.0.1:5500/molot-front/assets/icons/search.svg");
+  right: 34px;
+  top: 10px;
+}
+
+.search-form__user-input {
+  height: 50px;
+  padding: 0;
+  padding-left: 30px;
+  width: 775px;
+  border-right: none;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.search-form__user-input::-webkit-input-placeholder {
+  font-size: 14px;
+  color: #4F4F4F;
+}
+
+.search-form__user-input:-ms-input-placeholder {
+  font-size: 14px;
+  color: #4F4F4F;
+}
+
+.search-form__user-input::-ms-input-placeholder {
+  font-size: 14px;
+  color: #4F4F4F;
+}
+
+.search-form__user-input::placeholder {
+  font-size: 14px;
+  color: #4F4F4F;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -622,5 +751,10 @@ template {
  */
 [hidden] {
   display: none;
+}
+
+body {
+  font-family: 'HelveticaNeueCyr-Light', serif;
+  font-weight: 400;
 }
 /*# sourceMappingURL=main.css.map */

@@ -3,15 +3,15 @@
   color: #fff;
   font-size: 14px;
 
-  &__logo {
-    display: block;
-  }
-
   &__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 8px 0;
+  }
+
+  &__logo {
+    display: block;
   }
   
   &__menu {

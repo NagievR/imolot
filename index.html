@@ -4,7 +4,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href='./css/main.css' />
+  <link href="../molot-front/assets/fonts/HelveticaNeueCyr-Medium/helveticaneuecyr-medium.css" rel="stylesheet" />
+  <link href="../molot-front/assets/fonts/HelveticaNeueCyr-Light/helveticaneuecyr-light.css" rel="stylesheet">
+
   <title>Document</title>
 </head>
 <body>
@@ -17,6 +21,7 @@
           <img class="header__logo" src="./assets/images/logo.svg" alt="logo" />
         </a>
 
+        <!-- block? -->
         <div class="header__menu">
           <nav class="header__navigation">
             <ul>
@@ -28,6 +33,7 @@
           </nav>
           <div class="header__lang">Рус</div>
         </div>
+        <!-- /block? -->
 
         <div class="header__mobile-menu">
           <div class="header__auth">
@@ -48,9 +54,7 @@
       <div class="container">
         <div class="main__top-block-inner">
 
-          <button class="catalog-btn">
-            каталог товаров
-          </button>
+          <button class="catalog-btn">каталог товаров</button>
 
           <div class="services">
             <div class="services__calc-btn">
@@ -64,31 +68,27 @@
             </div>
           </div>
 
-          <button class="place-goods">
-            Разместить товаp
-          </button>
+          <button class="place-goods">Разместить товаp</button>
 
           <div class="user-block">
             <div class="user-block__favorites">
               <img 
+                alt="favorites" 
                 class="user-block__icon-favorites"
-                alt="favorites button" 
                 src="./assets/icons/favorites-btn.svg" 
               />
             </div>
-
             <div class="user-block__basket">
               <img 
+                alt="basket" 
                 class="user-block__icon-basket"
-                alt="basket button" 
                 src="./assets/icons/basket-btn.svg" 
               />
             </div>
-              
             <div class="user-block__auth">
               <img 
+                alt="authentication" 
                 class="user-block__icon-auth"
-                alt="auth button" 
                 src="./assets/icons/auth-btn.svg" 
               />
             </div>
@@ -98,6 +98,36 @@
       </div> <!-- /container -->
     </div> <!-- /main__top-block-wrap -->
 
+    
+    <div class="slider">
+      <div class="slider-inner">
+        <!-- ... -->
+      </div>
+    </div>
+
+
+    <div class="search-form">
+      <div class="container">
+        <form class="search-form__form">
+          <input class="search-form__user-input" type="text" placeholder="Поиск" />
+          <div class="search-form__right-block">
+
+            <div class="search-form__select-wrap">
+              <select class="search-form__user-select">
+                <option>Вся Украина</option>
+                <option>Киев</option>
+                <option>Харьков</option>
+              </select>
+              <img class="search-form__arrow-down" src="./assets/icons/open-arrow.svg" alt="arrow" />
+            </div>
+
+            <!-- <input class='search-form__submit' type='submit' value="найти" /> -->
+            <button class='search-form__submit'>Найти</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
 
 
 
@@ -106,7 +136,7 @@
         <div class="main__test">Lorem ipsum dolor sit amet consectetur adipisicing elit</div>
       </div>
     </div> <!-- /container -->
-
+  
   </main>
 
   <script src="./scripts/test.js"></script>
