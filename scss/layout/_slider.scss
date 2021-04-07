@@ -1,25 +1,114 @@
 .slider {
   padding: 0 20px;
+  
+  &__inner {
+    position: relative;
+    max-width: 1170px;
+    height: 453px;
+    margin: 40px auto 50px auto;
+    overflow: hidden;
+  }
+
+  &__nav-dots {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 50px;
+    bottom: 30px;
+
+    li {
+      cursor: pointer;
+      height: 7px;
+      width: 7px;
+      border: 1px solid #000;
+      border-radius: 50%;
+      margin-right: 7px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__to-all-promotions {
+    position: absolute;
+    bottom: 30px;
+    right: 50px;
+    cursor: pointer;
+    
+    &::after {
+      content: url('http://127.0.0.1:5500/molot-front/assets/icons/to-all-promotions.svg');
+      margin-left: 25px;
+    }
+  }
+
+  &__slide-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    height: 100%;
+
+    li {
+      padding: 30px 50px;
+      height: 100%;
+      box-sizing: border-box;
+    }
+  }
 }
 
-.slider-inner {
-  max-width: 1170px;
-  background-color: rgba(234, 227, 210, 1); //0.29
-  height: 453px;
-  margin: 40px auto 50px auto;
+.dot-active {
+  background-color: #FFC813;
+  border-color: #FFC813 !important;
 }
 
 @media (max-width: 1200px) {
-  .slider-inner {
-    width: 100%;
-    height: 312px;
-    margin: 30px auto;
+  .slider {
+
+    &__slide-list {
+      li {
+        padding: 20px 25px;
+      }
+    }
+
+    &__inner {
+      width: 100%;
+      height: 312px;
+      margin: 30px auto;
+    }
+
+    &__nav-dots,
+    &__to-all-promotions {
+      bottom: 20px;
+    }
+
+    &__nav-dots {
+      left: 25px;
+    }
+    
+    &__to-all-promotions {
+      right: 25px;
+    }
   }
 }
 
 @media (max-width: 767px) {
-  .slider-inner {
-    height: 180px;
-    margin: 20px auto 50px auto;
+  .slider {
+    padding: 0;
+
+    &__inner {
+      height: 180px;
+      margin: 20px auto 50px auto;
+    }
+
+    &__nav-dots,
+    &__to-all-promotions {
+      display: none;
+    }
+
+    &__list {
+      width: 90%;
+    }
   }
 }
