@@ -1,6 +1,6 @@
 .mobile-app {
   margin-top: 100px;
-  margin-bottom: 250px;
+  margin-bottom: 130px;
   padding: 0 20px;
   
   h2 {
@@ -23,6 +23,17 @@
   &__mobile-btns-wrap {
     width: 410px;
   }
+  
+  // &__btns {
+  //   div {
+  //     background-color: red;
+  //   }
+  //   div p {
+  //     color: beige;
+  //     // background-color: red;
+  //   }
+  // }
+
   
   &__left-col {
     width: 480px;
