@@ -1,0 +1,81 @@
+.btns-mobile-app {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  
+  p {
+    margin: 0;
+    color: #fff;
+    line-height: 20px;
+  }
+
+  &__able,
+  &__name {
+    white-space: nowrap;
+  }
+
+  &__name {
+    font-size: 18px;
+  }
+
+  &__app-store img,
+  &__play-market img {
+    width: 34px;
+    height: 34px;
+    margin-right: 7px;
+  }
+
+  a {
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #000; 
+    border-radius: 4px;
+    height: 54px;
+    width: 180px;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+  
+  &__able {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  .btns-mobile-app {
+    a {
+      height: 50px;
+      width: 135px;
+      padding: 10px 13px;
+    }
+
+    p {
+      line-height: 18px;
+    }
+
+    &__app-store img,
+    &__play-market img {
+      width: 22px;
+      height: 22px;
+    }
+
+    &__able {
+      font-size: 10px;
+    }
+
+    &__name {
+      font-size: 16px;
+    }
+  }
+}
