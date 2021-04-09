@@ -1,0 +1,216 @@
+.card {
+  background-color: #fff;
+  border: 1px solid #BDBDBD;
+  width: 385px;
+  box-sizing: border-box;
+  font-size: 14px;
+  margin: 2px;
+
+  &__header {
+    padding: 7px;
+    height: 48px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__logo {
+    height: 34px;
+    margin-right: 14px;
+  }
+
+  &__seller-name {
+    font-weight: 600;
+  }
+
+  &__country-name {
+    font-size: 10px;
+  }
+
+
+  &__image {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__list, 
+  &__arrow-right {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__list {
+    left: 10px;
+  }
+
+  &__arrow-right {
+    right: 10px;
+    opacity: 0.8;
+  }
+  
+
+  &__slides {
+    display: flex;
+    justify-content: center;
+    height: 15px;
+    align-items: center;
+
+    li {
+      background-color: #C4C4C4;
+      height: 5px;
+      width: 5px;
+      border-radius: 50%;
+      margin-right: 5px;
+      cursor: pointer;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  
+
+  &__content {
+    padding: 0 10px;
+  }
+
+  &__options-wrap {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__options {
+    li {
+      margin-right: 15px;
+
+      img {
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__rating {
+    li {
+      margin-right: 7px;
+    }
+
+    img {
+      height: 13px;
+      width: 13px;
+    }
+  }
+
+
+  &__price-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-bottom: 15px;
+  }
+
+  &__new-price,
+  &__old-price {
+    &::after {      
+      content: ' грн';
+    }
+  }
+  
+  &__new-price {
+    color: green;
+    font-weight: 600;
+    font-size: 16px;
+    margin-right: 8px;
+  }
+
+  &__old-price {
+    color: #BDBDBD;
+    text-decoration: line-through;
+  }
+
+
+  &__description-wrap {
+    line-height: 18px;
+    margin-bottom: 10px;
+  }
+
+  &__description {
+    font-weight: 600;
+  }
+
+  &__more-info {
+    color: #BDBDBD;
+    cursor: pointer;
+  }
+
+
+  &__all-reviews-btn {
+    cursor: pointer;
+    color: #BDBDBD;
+    margin-bottom: 5px;
+  }
+
+  &__reviews-list {
+    margin-bottom: 15px;
+    
+    li {
+      margin-bottom: 5px;
+    }
+  }
+
+  &__user-name {
+    font-weight: 600;
+  }
+
+
+  &__add-review {
+    border-top: 1px solid #BDBDBD;
+    padding: 10px;
+    height: 44px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+  }
+
+  &__score {
+    cursor: pointer;
+    width: 20px;
+    margin-right: 8px;
+  }
+
+  &__input {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    width: 88%;
+    margin-right: 8px;
+
+    &::placeholder {
+      font-size: 14px;
+    }
+  }
+
+  &__send {
+    cursor: pointer;
+    height: 19px;
+  }
+}
+
+.active-slide {
+  background-color: #2F80ED !important; // ??
+}
