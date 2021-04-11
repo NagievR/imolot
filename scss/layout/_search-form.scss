@@ -67,6 +67,8 @@
   }
 
   &__dropping-block-container {
+    position: relative;
+    z-index: 10;
     width: 268px;
     background-color: #fff;
     visibility: hidden;

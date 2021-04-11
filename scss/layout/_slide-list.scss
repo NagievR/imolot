@@ -18,11 +18,6 @@
     width: 9999px;
   }
 
-  // li {
-  //   position: relative;
-  // }
-
-
   &__slide1 {
     background-color: rgba(234, 227, 210, 0.29); 
   }
@@ -39,6 +34,8 @@
 
   &__subtitle {
     font-size: 28px;
+    font-weight: 400;
+    margin: 0;
   }
 
   &__description {
