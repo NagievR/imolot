@@ -1,4 +1,6 @@
 .footer {
+  display: none;
+
   background-color: #2F2F59;
   color: #fff;
   
@@ -14,7 +16,13 @@
     cursor: pointer;
   }
 
+  &__contacts {
+    font-weight: 300;
+  }
+
   &__column {
+    // width: 180px;
+
     li {
       margin-bottom: 15px;
 
@@ -22,13 +30,17 @@
         margin-bottom: 0;
       }
     }
+  }
 
-    max-width: 180px;
+  &__column_contacts {
+    display: flex;
+    flex-direction: column;
   }
 
   &__about {
     display: block;
     margin-top: 20px;
+    font-weight: 400;
   }
 
   &__col-name {
@@ -43,6 +55,7 @@
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    margin-top: 52px;
 
     img {
       cursor: pointer;
@@ -52,16 +65,14 @@
   &__social-media {
     display: flex;
   }
-  
-  // &__btns-wrapper {
-    
-  // }
 
   &__mobile-btns-wrap {
     width: 376px;
   }
 
   &__wrapper {
+    font-size: 18px;
+    padding: 40px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -83,23 +94,86 @@
   }
 }
 
-@media (max-width: 767px) {
-  .footer {
-    &__col-name {
-      margin-bottom: 20px;
-    }
-  }
-}
-
-@media (max-width: 950px) {
+@media (max-width: 1000px) {
   .footer {
     &__external-links {
+      margin-top: 53px;
       flex-flow: column-reverse;
       align-items: flex-start;
     }
 
     &__mobile-btns-wrap {
       margin-top: 30px;
+    }
+
+
+    &__column:nth-child(3) {
+      width: 20%;
+    }
+
+    &__column:nth-child(1),
+    &__column:nth-child(2) {
+      width: 40%;
+    }
+
+    &__column:nth-child(4) {
+      width: 32%;
+      order: 5;
+    }
+
+    &__external-links {
+      width: 68%;
+      order: 4;
+    }
+
+    &__contacts {
+      order: 2;
+      margin-bottom: 15px;
+      margin-top: 0;
+    }
+
+    &__about {
+      order: 1;
+      margin-bottom: 15px;
+      margin-top: 0;
+      font-weight: 500;
+    }
+
+    &__col-name {
+      order: 2;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .footer {
+    &__col-name {
+      margin-bottom: 20px;
+    }
+
+    &__wrapper {
+      font-size: 14px;
+    }
+
+    &__column {
+      width: 55%;
+    }
+
+    // &__external-links {
+    //   width: 280px;
+    // }
+
+    &__mobile-btns-wrap {
+      width: 376px;
+    }
+
+    &__social-media {
+      margin-right: 20px;
+
+      li img {
+        width: 30px;
+        height: 30px;
+      }
     }
   }
 }
