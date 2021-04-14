@@ -115,4 +115,13 @@
       cursor: pointer;
     }
   }
+
+  &__textarea {
+    border: 1px #E0E0E0 solid;
+    border-radius: 4px;
+    resize: none;
+    outline: none;
+    width: calc(100% - 65px);
+    padding: 15px 50px 15px 15px;
+  }
 }
