@@ -1,0 +1,22 @@
+.tab {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+  font-size: 14px;
+  margin-bottom: 50px;
+
+  li {
+    text-transform: uppercase;
+    margin-right: 30px;
+    font-weight: 550;
+    cursor: pointer; 
+    padding-bottom: 5px;
+    border-bottom: 1px solid transparent;
+
+    &:hover {
+      color: #F2994A;
+      border-bottom: 1px solid #F2994A;
+    }
+  }
+}
