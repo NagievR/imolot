@@ -25,6 +25,29 @@
   font-size: 16px;
 }
 
+.tab {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+  font-size: 14px;
+  margin-bottom: 50px;
+}
+
+.tab li {
+  text-transform: uppercase;
+  margin-right: 30px;
+  font-weight: 550;
+  cursor: pointer;
+  padding-bottom: 5px;
+  border-bottom: 1px solid transparent;
+}
+
+.tab li:hover {
+  color: #F2994A;
+  border-bottom: 1px solid #F2994A;
+}
+
 .checkbox {
   flex-shrink: 0;
   height: 18px;
@@ -35,18 +58,39 @@
 }
 
 .recent {
-  width: 420px;
+  width: 430px;
 }
 
 .recent__dialog-list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  max-height: 745px;
+  overflow: hidden;
+  overflow-y: auto;
+  margin-bottom: 70px;
+  scrollbar-width: thin;
+  scrollbar-color: #E0E0E0 transparent;
+}
+
+.recent__dialog-list::-webkit-scrollbar {
+  width: 3px;
+  background-color: #E0E0E0;
+}
+
+.recent__dialog-list::-webkit-scrollbar-thumb {
+  background-color: #BDBDBD;
+  border-radius: 2px;
 }
 
 .recent__dialog-card {
   display: flex;
   align-items: center;
+  margin-bottom: 5px;
+}
+
+.recent__dialog-card:last-child {
+  margin-bottom: 0;
 }
 
 .recent__dialog {
@@ -56,7 +100,24 @@
   box-sizing: border-box;
   padding: 15px 20px 15px 15px;
   height: 70px;
-  margin-bottom: 5px;
+  margin-right: 7px;
+  position: relative;
+  background-color: #F6F6F6;
+}
+
+.recent__new-messages {
+  position: absolute;
+  background-color: #FFC813;
+  font-size: 12px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  top: 38px;
+  right: 21px;
+  display: none;
 }
 
 .recent__avatar {
@@ -97,7 +158,6 @@
   align-items: baseline;
   justify-content: space-between;
   margin-bottom: 10px;
-  width: 100%;
 }
 
 .recent__short-message {
@@ -106,6 +166,18 @@
   text-overflow: ellipsis;
   font-size: 12px;
   width: 270px;
+}
+
+.new-message .recent__new-messages {
+  display: flex;
+}
+
+.new-message .recent__dialog {
+  background-color: #fff;
+}
+
+.active-chat .recent__dialog {
+  border-left: 4px solid #FFC813;
 }
 
 .options {
@@ -140,6 +212,11 @@
 
 .options__archivate-btn {
   cursor: pointer;
+}
+
+body {
+  font-family: 'HelveticaNeueCyr', serif;
+  font-weight: 400;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -479,33 +556,5 @@ template {
  */
 [hidden] {
   display: none;
-}
-
-.tab {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  list-style-type: none;
-  font-size: 14px;
-  margin-bottom: 50px;
-}
-
-.tab li {
-  text-transform: uppercase;
-  margin-right: 30px;
-  font-weight: 550;
-  cursor: pointer;
-  padding-bottom: 5px;
-  border-bottom: 1px solid transparent;
-}
-
-.tab li:hover {
-  color: #F2994A;
-  border-bottom: 1px solid #F2994A;
-}
-
-body {
-  font-family: 'HelveticaNeueCyr', serif;
-  font-weight: 400;
 }
 /*# sourceMappingURL=main.css.map */
