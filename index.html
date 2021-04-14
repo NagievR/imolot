@@ -29,11 +29,54 @@
           <li>архивные</li>
         </ul>
 
-        <input type="checkbox"  />
+        <div class="options">
+          <div class="options__col">
+            <input class="checkbox" type="checkbox" />
+            <span class="options__choose-all-btn">Выбрать все</span>
+            &nbsp;|&nbsp;
+            <span class="options__cancel-btn">Отменить</span>
+          </div>
+          <div class="options__col">
+            <div class="options__archivate-btn">
+              <img class="options__archivate-icon" src="./assets/images/archivate.svg" alt="в архив" />
+              <div class="options__archivate-title">В архив</div>
+            </div>
+          </div>
+        </div>
 
-      </div>
-    </div>
-  </div>
+        <div class="recent">
+          <ul class="recent__dialog-list">
+
+            <li class="recent__dialog-card">
+              <input class="checkbox" type="checkbox" disabled />
+
+              <div class="recent__dialog">
+                <div class="recent__dialog-inner">
+
+                  <div class="recent__avatar">
+                    <img src='https://s3-alpha-sig.figma.com/img/ad5e/ddfd/deaf3fa335599fd50734afb8e30e4bc4?Expires=1619395200&Signature=U2vlXNkJ3jZ7DhyvNIaxx5m1VE-iIS6QyPGZpShMciNso-yr4GAA63wlvevssaYCZ8mrW-0HitYr-zMsmN9yxMgn0kK-6gNR0OAvV4DF8NIOgbNsjG9IdpqiGwq97uRkQYODLYODiMbWZL3omE33c2AIyAVdZKYae5-1IQtZhI6grAhV~EC1RggzWtsIvJrLz0~U9wx0wD-Sj6OjpCC9sY0nfQp0eKTAFFbfAH6o6x-AkNlDYcidpWr2YhFD4fZRLu20kgpBl~fQ8kjhYj3q76A52dAbVuxO~eEp8ktRW9DNNW5M~b7w1WcLikM-C3FhJTfXisLvzbUR017RYz03Nw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA' alt='аватар' />
+                  </div>
+
+                  <div class="recent__dialog-wrap">
+                    <div class="recent__message-info">
+                      <div class="recent__sender-name">Диденко Дмитрий</div>
+                      <div class="recent__date">21.01.2021</div>
+                    </div>
+                    <div class="recent__short-message">
+                      В своём стремлении улучшить пользовательский стремлении улучшить пользовательский стремлении улучшить пользовательский
+                    </div>
+                  </div>
+
+                </div> <!-- /recent__dialog-inner -->
+              </div> <!-- /recent__dialog -->
+            </li> <!-- /recent__dialog-card -->
+
+          </ul>
+        </div> <!-- /recent -->
+
+      </div> <!-- /chat__inner -->
+    </div> <!-- /container -->
+  </div> <!-- /chat -->
 
 </body>
 </html>

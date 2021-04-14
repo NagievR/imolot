@@ -5,10 +5,6 @@
     font-size: 48px;
   }
 
-  &__search-messages {
-    
-  }
-
   &__search-input {
     width: 45%;
     font-size: 16px;
@@ -16,10 +12,162 @@
     border: 1px solid #E0E0E0;
     border-radius: 4px;
     margin-bottom: 40px;
+    outline: none;
 
     &::placeholder {
       color: #828282;
       font-size: 16px;
     }
+  }
+}
+
+.checkbox {
+  flex-shrink: 0;
+  height: 18px;
+  width: 18px;
+  border: 1px solid red;
+  border-radius: 40px;
+  margin-right: 16px;
+}
+
+.recent {
+  width: 420px;
+
+  &__dialog-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &__dialog-card {
+    display: flex;
+    align-items: center;
+  }
+
+  &__dialog {
+    width: 100%;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 15px 20px 15px 15px;
+    height: 70px;
+    margin-bottom: 5px;
+  }
+
+  &__avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-right: 10px;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+  }
+
+  &__dialog-wrap {
+    width: 100%;
+  }
+
+  &__sender-name {
+    font-size: 14px;
+    font-weight: 550;
+  }
+
+  &__date {
+    color: #BDBDBD;
+    font-size: 12px;
+  }
+
+  &__dialog-inner {
+    display: flex;
+  }
+
+  &__message-info {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+    width: 100%; /// ============================ REMOVE 
+  }
+
+  &__short-message {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 12px;
+    width: 270px;
+  }
+
+
+
+  // &__dialog-block {
+  //   display: flex;
+  //   align-items: center;
+  //   // border: 1px dotted red;
+  // }
+
+  // &__dialog-wrap {
+  //   height: 70px;
+  // border: 1px solid #E0E0E0;
+  // border-radius: 4px;
+  //   width: 92%;
+  //   display: flex;
+  //   box-sizing: border-box;
+  //   padding: 15px 20px 15px 15px;
+  //   align-items: center;
+  // }
+
+  // &__dialog-inner {
+    
+  // }
+
+  // &__sender-info-wrap {
+  //   display: flex;
+  //   justify-content: space-between;
+  //   width: 335px;
+  // }
+
+
+  
+}
+
+.options {
+  &__choose-all-btn,
+  &__cancel-btn {
+    cursor: pointer;
+  }
+
+  width: 420px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 20px;
+
+  &__col {
+    display: flex;
+    align-items: center;
+  }
+
+  &__archivate-btn {
+    display: flex;
+    align-items: center;
+  }
+
+  &__archivate-icon {
+    transform: translateY(-1px);
+  }
+
+  &__archivate-title {
+    margin-left: 7px;
+  }
+
+  &__archivate-btn {
+    cursor: pointer;
   }
 }
