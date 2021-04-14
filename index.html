@@ -10,14 +10,14 @@
 </head>
 <body>
 
-  <div class="chat">
+  <div class="chat-page">
     <div class="container">
-      <div class="chat__inner">
+      <div class="chat-page__inner">
 
-        <h1 class="chat__heading">Сообщения</h1>
-        <div class="chat__search-wrap">
+        <h1 class="chat-page__heading">Сообщения</h1>
+        <div class="chat-page__search-wrap">
           <input 
-            class="chat__search-input" 
+            class="chat-page__search-input" 
             type="text" 
             placeholder="Поиск по имени собеседника или названию магазина" 
           />
@@ -44,305 +44,333 @@
           </div>
         </div>
 
-        <div class="recent">
-          <ul class="recent__dialog-list">
+        <div class="chat-page__main-wrap">
+          <div class="recent">
+            <ul class="recent__dialog-list">
+  
+              <li class="recent__dialog-card new-message">
+                <input class="checkbox" type="checkbox" disabled />
+                <div class="recent__dialog">
+                  <div class="recent__new-messages">11</div>
+                  <div class="recent__dialog-inner">
+                    <div class="avatar">
+                      <img src='https://s3-alpha-sig.figma.com/img/ad5e/ddfd/deaf3fa335599fd50734afb8e30e4bc4?Expires=1619395200&Signature=U2vlXNkJ3jZ7DhyvNIaxx5m1VE-iIS6QyPGZpShMciNso-yr4GAA63wlvevssaYCZ8mrW-0HitYr-zMsmN9yxMgn0kK-6gNR0OAvV4DF8NIOgbNsjG9IdpqiGwq97uRkQYODLYODiMbWZL3omE33c2AIyAVdZKYae5-1IQtZhI6grAhV~EC1RggzWtsIvJrLz0~U9wx0wD-Sj6OjpCC9sY0nfQp0eKTAFFbfAH6o6x-AkNlDYcidpWr2YhFD4fZRLu20kgpBl~fQ8kjhYj3q76A52dAbVuxO~eEp8ktRW9DNNW5M~b7w1WcLikM-C3FhJTfXisLvzbUR017RYz03Nw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA' alt='аватар' />
+                    </div>
+                    <div class="recent__dialog-wrap">
+                      <div class="recent__message-info">
+                        <div class="recent__sender-name">Диденко Дмитрий</div>
+                        <div class="recent__date">21.01.2021</div>
+                      </div>
+                      <div class="recent__short-message">
+                        В своём стремлении улучшить пользовательский стремлении улучшить пользовательский стремлении улучшить пользовательский
+                      </div>
+                    </div>
+                  </div> <!-- /recent__dialog-inner -->
+                </div> <!-- /recent__dialog -->
+              </li> <!-- /recent__dialog-card -->
+  
+              <li class="recent__dialog-card new-message">
+                <input class="checkbox" type="checkbox" disabled />
+                <div class="recent__dialog">
+                  <div class="recent__new-messages">11</div>
+                  <div class="recent__dialog-inner">
+                    <div class="avatar">
+                      <img src='https://s3-alpha-sig.figma.com/img/ad5e/ddfd/deaf3fa335599fd50734afb8e30e4bc4?Expires=1619395200&Signature=U2vlXNkJ3jZ7DhyvNIaxx5m1VE-iIS6QyPGZpShMciNso-yr4GAA63wlvevssaYCZ8mrW-0HitYr-zMsmN9yxMgn0kK-6gNR0OAvV4DF8NIOgbNsjG9IdpqiGwq97uRkQYODLYODiMbWZL3omE33c2AIyAVdZKYae5-1IQtZhI6grAhV~EC1RggzWtsIvJrLz0~U9wx0wD-Sj6OjpCC9sY0nfQp0eKTAFFbfAH6o6x-AkNlDYcidpWr2YhFD4fZRLu20kgpBl~fQ8kjhYj3q76A52dAbVuxO~eEp8ktRW9DNNW5M~b7w1WcLikM-C3FhJTfXisLvzbUR017RYz03Nw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA' alt='аватар' />
+                    </div>
+                    <div class="recent__dialog-wrap">
+                      <div class="recent__message-info">
+                        <div class="recent__sender-name">Диденко Дмитрий</div>
+                        <div class="recent__date">21.01.2021</div>
+                      </div>
+                      <div class="recent__short-message">
+                        В своём стремлении улучшить пользовательский стремлении улучшить пользовательский стремлении улучшить пользовательский
+                      </div>
+                    </div>
+                  </div> <!-- /recent__dialog-inner -->
+                </div> <!-- /recent__dialog -->
+              </li> <!-- /recent__dialog-card -->
+  
+              <li class="recent__dialog-card active-chat">
+                <input class="checkbox" type="checkbox" disabled />
+                <div class="recent__dialog">
+                  <div class="recent__new-messages">11</div>
+                  <div class="recent__dialog-inner">
+                    <div class="avatar">
+                      <img src='https://s3-alpha-sig.figma.com/img/ad5e/ddfd/deaf3fa335599fd50734afb8e30e4bc4?Expires=1619395200&Signature=U2vlXNkJ3jZ7DhyvNIaxx5m1VE-iIS6QyPGZpShMciNso-yr4GAA63wlvevssaYCZ8mrW-0HitYr-zMsmN9yxMgn0kK-6gNR0OAvV4DF8NIOgbNsjG9IdpqiGwq97uRkQYODLYODiMbWZL3omE33c2AIyAVdZKYae5-1IQtZhI6grAhV~EC1RggzWtsIvJrLz0~U9wx0wD-Sj6OjpCC9sY0nfQp0eKTAFFbfAH6o6x-AkNlDYcidpWr2YhFD4fZRLu20kgpBl~fQ8kjhYj3q76A52dAbVuxO~eEp8ktRW9DNNW5M~b7w1WcLikM-C3FhJTfXisLvzbUR017RYz03Nw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA' alt='аватар' />
+                    </div>
+                    <div class="recent__dialog-wrap">
+                      <div class="recent__message-info">
+                        <div class="recent__sender-name">Диденко Дмитрий</div>
+                        <div class="recent__date">21.01.2021</div>
+                      </div>
+                      <div class="recent__short-message">
+                        В своём стремлении улучшить пользовательский стремлении улучшить пользовательский стремлении улучшить пользовательский
+                      </div>
+                    </div>
+                  </div> <!-- /recent__dialog-inner -->
+                </div> <!-- /recent__dialog -->
+              </li> <!-- /recent__dialog-card -->
+  
+              <li class="recent__dialog-card">
+                <input class="checkbox" type="checkbox" disabled />
+                <div class="recent__dialog">
+                  <div class="recent__new-messages">11</div>
+                  <div class="recent__dialog-inner">
+                    <div class="avatar">
+                      <img src='https://s3-alpha-sig.figma.com/img/ad5e/ddfd/deaf3fa335599fd50734afb8e30e4bc4?Expires=1619395200&Signature=U2vlXNkJ3jZ7DhyvNIaxx5m1VE-iIS6QyPGZpShMciNso-yr4GAA63wlvevssaYCZ8mrW-0HitYr-zMsmN9yxMgn0kK-6gNR0OAvV4DF8NIOgbNsjG9IdpqiGwq97uRkQYODLYODiMbWZL3omE33c2AIyAVdZKYae5-1IQtZhI6grAhV~EC1RggzWtsIvJrLz0~U9wx0wD-Sj6OjpCC9sY0nfQp0eKTAFFbfAH6o6x-AkNlDYcidpWr2YhFD4fZRLu20kgpBl~fQ8kjhYj3q76A52dAbVuxO~eEp8ktRW9DNNW5M~b7w1WcLikM-C3FhJTfXisLvzbUR017RYz03Nw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA' alt='аватар' />
+                    </div>
+                    <div class="recent__dialog-wrap">
+                      <div class="recent__message-info">
+                        <div class="recent__sender-name">Диденко Дмитрий</div>
+                        <div class="recent__date">21.01.2021</div>
+                      </div>
+                      <div class="recent__short-message">
+                        В своём стремлении улучшить пользовательский стремлении улучшить пользовательский стремлении улучшить пользовательский
+                      </div>
+                    </div>
+                  </div> <!-- /recent__dialog-inner -->
+                </div> <!-- /recent__dialog -->
+              </li> <!-- /recent__dialog-card -->
+              
+              <li class="recent__dialog-card">
+                <input class="checkbox" type="checkbox" disabled />
+                <div class="recent__dialog">
+                  <div class="recent__new-messages">11</div>
+                  <div class="recent__dialog-inner">
+                    <div class="avatar">
+                      <img src='https://s3-alpha-sig.figma.com/img/ad5e/ddfd/deaf3fa335599fd50734afb8e30e4bc4?Expires=1619395200&Signature=U2vlXNkJ3jZ7DhyvNIaxx5m1VE-iIS6QyPGZpShMciNso-yr4GAA63wlvevssaYCZ8mrW-0HitYr-zMsmN9yxMgn0kK-6gNR0OAvV4DF8NIOgbNsjG9IdpqiGwq97uRkQYODLYODiMbWZL3omE33c2AIyAVdZKYae5-1IQtZhI6grAhV~EC1RggzWtsIvJrLz0~U9wx0wD-Sj6OjpCC9sY0nfQp0eKTAFFbfAH6o6x-AkNlDYcidpWr2YhFD4fZRLu20kgpBl~fQ8kjhYj3q76A52dAbVuxO~eEp8ktRW9DNNW5M~b7w1WcLikM-C3FhJTfXisLvzbUR017RYz03Nw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA' alt='аватар' />
+                    </div>
+                    <div class="recent__dialog-wrap">
+                      <div class="recent__message-info">
+                        <div class="recent__sender-name">Диденко Дмитрий</div>
+                        <div class="recent__date">21.01.2021</div>
+                      </div>
+                      <div class="recent__short-message">
+                        В своём стремлении улучшить пользовательский стремлении улучшить пользовательский стремлении улучшить пользовательский
+                      </div>
+                    </div>
+                  </div> <!-- /recent__dialog-inner -->
+                </div> <!-- /recent__dialog -->
+              </li> <!-- /recent__dialog-card -->
+  
+              <li class="recent__dialog-card">
+                <input class="checkbox" type="checkbox" disabled />
+                <div class="recent__dialog">
+                  <div class="recent__new-messages">11</div>
+                  <div class="recent__dialog-inner">
+                    <div class="avatar">
+                      <img src='https://s3-alpha-sig.figma.com/img/ad5e/ddfd/deaf3fa335599fd50734afb8e30e4bc4?Expires=1619395200&Signature=U2vlXNkJ3jZ7DhyvNIaxx5m1VE-iIS6QyPGZpShMciNso-yr4GAA63wlvevssaYCZ8mrW-0HitYr-zMsmN9yxMgn0kK-6gNR0OAvV4DF8NIOgbNsjG9IdpqiGwq97uRkQYODLYODiMbWZL3omE33c2AIyAVdZKYae5-1IQtZhI6grAhV~EC1RggzWtsIvJrLz0~U9wx0wD-Sj6OjpCC9sY0nfQp0eKTAFFbfAH6o6x-AkNlDYcidpWr2YhFD4fZRLu20kgpBl~fQ8kjhYj3q76A52dAbVuxO~eEp8ktRW9DNNW5M~b7w1WcLikM-C3FhJTfXisLvzbUR017RYz03Nw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA' alt='аватар' />
+                    </div>
+                    <div class="recent__dialog-wrap">
+                      <div class="recent__message-info">
+                        <div class="recent__sender-name">Диденко Дмитрий</div>
+                        <div class="recent__date">21.01.2021</div>
+                      </div>
+                      <div class="recent__short-message">
+                        В своём стремлении улучшить пользовательский стремлении улучшить пользовательский стремлении улучшить пользовательский
+                      </div>
+                    </div>
+                  </div> <!-- /recent__dialog-inner -->
+                </div> <!-- /recent__dialog -->
+              </li> <!-- /recent__dialog-card -->
+              
+              <li class="recent__dialog-card">
+                <input class="checkbox" type="checkbox" disabled />
+                <div class="recent__dialog">
+                  <div class="recent__new-messages">11</div>
+                  <div class="recent__dialog-inner">
+                    <div class="avatar">
+                      <img src='https://s3-alpha-sig.figma.com/img/ad5e/ddfd/deaf3fa335599fd50734afb8e30e4bc4?Expires=1619395200&Signature=U2vlXNkJ3jZ7DhyvNIaxx5m1VE-iIS6QyPGZpShMciNso-yr4GAA63wlvevssaYCZ8mrW-0HitYr-zMsmN9yxMgn0kK-6gNR0OAvV4DF8NIOgbNsjG9IdpqiGwq97uRkQYODLYODiMbWZL3omE33c2AIyAVdZKYae5-1IQtZhI6grAhV~EC1RggzWtsIvJrLz0~U9wx0wD-Sj6OjpCC9sY0nfQp0eKTAFFbfAH6o6x-AkNlDYcidpWr2YhFD4fZRLu20kgpBl~fQ8kjhYj3q76A52dAbVuxO~eEp8ktRW9DNNW5M~b7w1WcLikM-C3FhJTfXisLvzbUR017RYz03Nw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA' alt='аватар' />
+                    </div>
+                    <div class="recent__dialog-wrap">
+                      <div class="recent__message-info">
+                        <div class="recent__sender-name">Диденко Дмитрий</div>
+                        <div class="recent__date">21.01.2021</div>
+                      </div>
+                      <div class="recent__short-message">
+                        В своём стремлении улучшить пользовательский стремлении улучшить пользовательский стремлении улучшить пользовательский
+                      </div>
+                    </div>
+                  </div> <!-- /recent__dialog-inner -->
+                </div> <!-- /recent__dialog -->
+              </li> <!-- /recent__dialog-card -->
 
-            <li class="recent__dialog-card new-message">
-              <input class="checkbox" type="checkbox" disabled />
-              <div class="recent__dialog">
-                <div class="recent__new-messages">11</div>
-                <div class="recent__dialog-inner">
-                  <div class="recent__avatar">
-                    <img src='https://s3-alpha-sig.figma.com/img/ad5e/ddfd/deaf3fa335599fd50734afb8e30e4bc4?Expires=1619395200&Signature=U2vlXNkJ3jZ7DhyvNIaxx5m1VE-iIS6QyPGZpShMciNso-yr4GAA63wlvevssaYCZ8mrW-0HitYr-zMsmN9yxMgn0kK-6gNR0OAvV4DF8NIOgbNsjG9IdpqiGwq97uRkQYODLYODiMbWZL3omE33c2AIyAVdZKYae5-1IQtZhI6grAhV~EC1RggzWtsIvJrLz0~U9wx0wD-Sj6OjpCC9sY0nfQp0eKTAFFbfAH6o6x-AkNlDYcidpWr2YhFD4fZRLu20kgpBl~fQ8kjhYj3q76A52dAbVuxO~eEp8ktRW9DNNW5M~b7w1WcLikM-C3FhJTfXisLvzbUR017RYz03Nw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA' alt='аватар' />
-                  </div>
-                  <div class="recent__dialog-wrap">
-                    <div class="recent__message-info">
-                      <div class="recent__sender-name">Диденко Дмитрий</div>
-                      <div class="recent__date">21.01.2021</div>
+              <li class="recent__dialog-card">
+                <input class="checkbox" type="checkbox" disabled />
+                <div class="recent__dialog">
+                  <div class="recent__new-messages">11</div>
+                  <div class="recent__dialog-inner">
+                    <div class="avatar">
+                      <img src='https://s3-alpha-sig.figma.com/img/ad5e/ddfd/deaf3fa335599fd50734afb8e30e4bc4?Expires=1619395200&Signature=U2vlXNkJ3jZ7DhyvNIaxx5m1VE-iIS6QyPGZpShMciNso-yr4GAA63wlvevssaYCZ8mrW-0HitYr-zMsmN9yxMgn0kK-6gNR0OAvV4DF8NIOgbNsjG9IdpqiGwq97uRkQYODLYODiMbWZL3omE33c2AIyAVdZKYae5-1IQtZhI6grAhV~EC1RggzWtsIvJrLz0~U9wx0wD-Sj6OjpCC9sY0nfQp0eKTAFFbfAH6o6x-AkNlDYcidpWr2YhFD4fZRLu20kgpBl~fQ8kjhYj3q76A52dAbVuxO~eEp8ktRW9DNNW5M~b7w1WcLikM-C3FhJTfXisLvzbUR017RYz03Nw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA' alt='аватар' />
                     </div>
-                    <div class="recent__short-message">
-                      В своём стремлении улучшить пользовательский стремлении улучшить пользовательский стремлении улучшить пользовательский
+                    <div class="recent__dialog-wrap">
+                      <div class="recent__message-info">
+                        <div class="recent__sender-name">Диденко Дмитрий</div>
+                        <div class="recent__date">21.01.2021</div>
+                      </div>
+                      <div class="recent__short-message">
+                        В своём стремлении улучшить пользовательский стремлении улучшить пользовательский стремлении улучшить пользовательский
+                      </div>
                     </div>
-                  </div>
-                </div> <!-- /recent__dialog-inner -->
-              </div> <!-- /recent__dialog -->
-            </li> <!-- /recent__dialog-card -->
+                  </div> <!-- /recent__dialog-inner -->
+                </div> <!-- /recent__dialog -->
+              </li> <!-- /recent__dialog-card -->
+              
+              <li class="recent__dialog-card">
+                <input class="checkbox" type="checkbox" disabled />
+                <div class="recent__dialog">
+                  <div class="recent__new-messages">11</div>
+                  <div class="recent__dialog-inner">
+                    <div class="avatar">
+                      <img src='https://s3-alpha-sig.figma.com/img/ad5e/ddfd/deaf3fa335599fd50734afb8e30e4bc4?Expires=1619395200&Signature=U2vlXNkJ3jZ7DhyvNIaxx5m1VE-iIS6QyPGZpShMciNso-yr4GAA63wlvevssaYCZ8mrW-0HitYr-zMsmN9yxMgn0kK-6gNR0OAvV4DF8NIOgbNsjG9IdpqiGwq97uRkQYODLYODiMbWZL3omE33c2AIyAVdZKYae5-1IQtZhI6grAhV~EC1RggzWtsIvJrLz0~U9wx0wD-Sj6OjpCC9sY0nfQp0eKTAFFbfAH6o6x-AkNlDYcidpWr2YhFD4fZRLu20kgpBl~fQ8kjhYj3q76A52dAbVuxO~eEp8ktRW9DNNW5M~b7w1WcLikM-C3FhJTfXisLvzbUR017RYz03Nw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA' alt='аватар' />
+                    </div>
+                    <div class="recent__dialog-wrap">
+                      <div class="recent__message-info">
+                        <div class="recent__sender-name">Диденко Дмитрий</div>
+                        <div class="recent__date">21.01.2021</div>
+                      </div>
+                      <div class="recent__short-message">
+                        В своём стремлении улучшить пользовательский стремлении улучшить пользовательский стремлении улучшить пользовательский
+                      </div>
+                    </div>
+                  </div> <!-- /recent__dialog-inner -->
+                </div> <!-- /recent__dialog -->
+              </li> <!-- /recent__dialog-card -->
 
-            <li class="recent__dialog-card new-message">
-              <input class="checkbox" type="checkbox" disabled />
-              <div class="recent__dialog">
-                <div class="recent__new-messages">11</div>
-                <div class="recent__dialog-inner">
-                  <div class="recent__avatar">
-                    <img src='https://s3-alpha-sig.figma.com/img/ad5e/ddfd/deaf3fa335599fd50734afb8e30e4bc4?Expires=1619395200&Signature=U2vlXNkJ3jZ7DhyvNIaxx5m1VE-iIS6QyPGZpShMciNso-yr4GAA63wlvevssaYCZ8mrW-0HitYr-zMsmN9yxMgn0kK-6gNR0OAvV4DF8NIOgbNsjG9IdpqiGwq97uRkQYODLYODiMbWZL3omE33c2AIyAVdZKYae5-1IQtZhI6grAhV~EC1RggzWtsIvJrLz0~U9wx0wD-Sj6OjpCC9sY0nfQp0eKTAFFbfAH6o6x-AkNlDYcidpWr2YhFD4fZRLu20kgpBl~fQ8kjhYj3q76A52dAbVuxO~eEp8ktRW9DNNW5M~b7w1WcLikM-C3FhJTfXisLvzbUR017RYz03Nw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA' alt='аватар' />
-                  </div>
-                  <div class="recent__dialog-wrap">
-                    <div class="recent__message-info">
-                      <div class="recent__sender-name">Диденко Дмитрий</div>
-                      <div class="recent__date">21.01.2021</div>
+              <li class="recent__dialog-card">
+                <input class="checkbox" type="checkbox" disabled />
+                <div class="recent__dialog">
+                  <div class="recent__new-messages">11</div>
+                  <div class="recent__dialog-inner">
+                    <div class="avatar">
+                      <img src='https://s3-alpha-sig.figma.com/img/ad5e/ddfd/deaf3fa335599fd50734afb8e30e4bc4?Expires=1619395200&Signature=U2vlXNkJ3jZ7DhyvNIaxx5m1VE-iIS6QyPGZpShMciNso-yr4GAA63wlvevssaYCZ8mrW-0HitYr-zMsmN9yxMgn0kK-6gNR0OAvV4DF8NIOgbNsjG9IdpqiGwq97uRkQYODLYODiMbWZL3omE33c2AIyAVdZKYae5-1IQtZhI6grAhV~EC1RggzWtsIvJrLz0~U9wx0wD-Sj6OjpCC9sY0nfQp0eKTAFFbfAH6o6x-AkNlDYcidpWr2YhFD4fZRLu20kgpBl~fQ8kjhYj3q76A52dAbVuxO~eEp8ktRW9DNNW5M~b7w1WcLikM-C3FhJTfXisLvzbUR017RYz03Nw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA' alt='аватар' />
                     </div>
-                    <div class="recent__short-message">
-                      В своём стремлении улучшить пользовательский стремлении улучшить пользовательский стремлении улучшить пользовательский
+                    <div class="recent__dialog-wrap">
+                      <div class="recent__message-info">
+                        <div class="recent__sender-name">Диденко Дмитрий</div>
+                        <div class="recent__date">21.01.2021</div>
+                      </div>
+                      <div class="recent__short-message">
+                        В своём стремлении улучшить пользовательский стремлении улучшить пользовательский стремлении улучшить пользовательский
+                      </div>
                     </div>
-                  </div>
-                </div> <!-- /recent__dialog-inner -->
-              </div> <!-- /recent__dialog -->
-            </li> <!-- /recent__dialog-card -->
+                  </div> <!-- /recent__dialog-inner -->
+                </div> <!-- /recent__dialog -->
+              </li> <!-- /recent__dialog-card -->
+              
+              <li class="recent__dialog-card">
+                <input class="checkbox" type="checkbox" disabled />
+                <div class="recent__dialog">
+                  <div class="recent__new-messages">11</div>
+                  <div class="recent__dialog-inner">
+                    <div class="avatar">
+                      <img src='https://s3-alpha-sig.figma.com/img/ad5e/ddfd/deaf3fa335599fd50734afb8e30e4bc4?Expires=1619395200&Signature=U2vlXNkJ3jZ7DhyvNIaxx5m1VE-iIS6QyPGZpShMciNso-yr4GAA63wlvevssaYCZ8mrW-0HitYr-zMsmN9yxMgn0kK-6gNR0OAvV4DF8NIOgbNsjG9IdpqiGwq97uRkQYODLYODiMbWZL3omE33c2AIyAVdZKYae5-1IQtZhI6grAhV~EC1RggzWtsIvJrLz0~U9wx0wD-Sj6OjpCC9sY0nfQp0eKTAFFbfAH6o6x-AkNlDYcidpWr2YhFD4fZRLu20kgpBl~fQ8kjhYj3q76A52dAbVuxO~eEp8ktRW9DNNW5M~b7w1WcLikM-C3FhJTfXisLvzbUR017RYz03Nw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA' alt='аватар' />
+                    </div>
+                    <div class="recent__dialog-wrap">
+                      <div class="recent__message-info">
+                        <div class="recent__sender-name">Диденко Дмитрий</div>
+                        <div class="recent__date">21.01.2021</div>
+                      </div>
+                      <div class="recent__short-message">
+                        В своём стремлении улучшить пользовательский стремлении улучшить пользовательский стремлении улучшить пользовательский
+                      </div>
+                    </div>
+                  </div> <!-- /recent__dialog-inner -->
+                </div> <!-- /recent__dialog -->
+              </li> <!-- /recent__dialog-card -->
 
-            <li class="recent__dialog-card active-chat">
-              <input class="checkbox" type="checkbox" disabled />
-              <div class="recent__dialog">
-                <div class="recent__new-messages">11</div>
-                <div class="recent__dialog-inner">
-                  <div class="recent__avatar">
-                    <img src='https://s3-alpha-sig.figma.com/img/ad5e/ddfd/deaf3fa335599fd50734afb8e30e4bc4?Expires=1619395200&Signature=U2vlXNkJ3jZ7DhyvNIaxx5m1VE-iIS6QyPGZpShMciNso-yr4GAA63wlvevssaYCZ8mrW-0HitYr-zMsmN9yxMgn0kK-6gNR0OAvV4DF8NIOgbNsjG9IdpqiGwq97uRkQYODLYODiMbWZL3omE33c2AIyAVdZKYae5-1IQtZhI6grAhV~EC1RggzWtsIvJrLz0~U9wx0wD-Sj6OjpCC9sY0nfQp0eKTAFFbfAH6o6x-AkNlDYcidpWr2YhFD4fZRLu20kgpBl~fQ8kjhYj3q76A52dAbVuxO~eEp8ktRW9DNNW5M~b7w1WcLikM-C3FhJTfXisLvzbUR017RYz03Nw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA' alt='аватар' />
-                  </div>
-                  <div class="recent__dialog-wrap">
-                    <div class="recent__message-info">
-                      <div class="recent__sender-name">Диденко Дмитрий</div>
-                      <div class="recent__date">21.01.2021</div>
+              <li class="recent__dialog-card">
+                <input class="checkbox" type="checkbox" disabled />
+                <div class="recent__dialog">
+                  <div class="recent__new-messages">11</div>
+                  <div class="recent__dialog-inner">
+                    <div class="avatar">
+                      <img src='https://s3-alpha-sig.figma.com/img/ad5e/ddfd/deaf3fa335599fd50734afb8e30e4bc4?Expires=1619395200&Signature=U2vlXNkJ3jZ7DhyvNIaxx5m1VE-iIS6QyPGZpShMciNso-yr4GAA63wlvevssaYCZ8mrW-0HitYr-zMsmN9yxMgn0kK-6gNR0OAvV4DF8NIOgbNsjG9IdpqiGwq97uRkQYODLYODiMbWZL3omE33c2AIyAVdZKYae5-1IQtZhI6grAhV~EC1RggzWtsIvJrLz0~U9wx0wD-Sj6OjpCC9sY0nfQp0eKTAFFbfAH6o6x-AkNlDYcidpWr2YhFD4fZRLu20kgpBl~fQ8kjhYj3q76A52dAbVuxO~eEp8ktRW9DNNW5M~b7w1WcLikM-C3FhJTfXisLvzbUR017RYz03Nw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA' alt='аватар' />
                     </div>
-                    <div class="recent__short-message">
-                      В своём стремлении улучшить пользовательский стремлении улучшить пользовательский стремлении улучшить пользовательский
+                    <div class="recent__dialog-wrap">
+                      <div class="recent__message-info">
+                        <div class="recent__sender-name">Диденко Дмитрий</div>
+                        <div class="recent__date">21.01.2021</div>
+                      </div>
+                      <div class="recent__short-message">
+                        В своём стремлении улучшить пользовательский стремлении улучшить пользовательский стремлении улучшить пользовательский
+                      </div>
                     </div>
-                  </div>
-                </div> <!-- /recent__dialog-inner -->
-              </div> <!-- /recent__dialog -->
-            </li> <!-- /recent__dialog-card -->
+                  </div> <!-- /recent__dialog-inner -->
+                </div> <!-- /recent__dialog -->
+              </li> <!-- /recent__dialog-card -->
+              
+              <li class="recent__dialog-card">
+                <input class="checkbox" type="checkbox" disabled />
+                <div class="recent__dialog">
+                  <div class="recent__new-messages">11</div>
+                  <div class="recent__dialog-inner">
+                    <div class="avatar">
+                      <img src='https://s3-alpha-sig.figma.com/img/ad5e/ddfd/deaf3fa335599fd50734afb8e30e4bc4?Expires=1619395200&Signature=U2vlXNkJ3jZ7DhyvNIaxx5m1VE-iIS6QyPGZpShMciNso-yr4GAA63wlvevssaYCZ8mrW-0HitYr-zMsmN9yxMgn0kK-6gNR0OAvV4DF8NIOgbNsjG9IdpqiGwq97uRkQYODLYODiMbWZL3omE33c2AIyAVdZKYae5-1IQtZhI6grAhV~EC1RggzWtsIvJrLz0~U9wx0wD-Sj6OjpCC9sY0nfQp0eKTAFFbfAH6o6x-AkNlDYcidpWr2YhFD4fZRLu20kgpBl~fQ8kjhYj3q76A52dAbVuxO~eEp8ktRW9DNNW5M~b7w1WcLikM-C3FhJTfXisLvzbUR017RYz03Nw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA' alt='аватар' />
+                    </div>
+                    <div class="recent__dialog-wrap">
+                      <div class="recent__message-info">
+                        <div class="recent__sender-name">Диденко Дмитрий</div>
+                        <div class="recent__date">21.01.2021</div>
+                      </div>
+                      <div class="recent__short-message">
+                        В своём стремлении улучшить пользовательский стремлении улучшить пользовательский стремлении улучшить пользовательский
+                      </div>
+                    </div>
+                  </div> <!-- /recent__dialog-inner -->
+                </div> <!-- /recent__dialog -->
+              </li> <!-- /recent__dialog-card -->
+  
+              <li class="recent__dialog-card">
+                <input class="checkbox" type="checkbox" disabled />
+                <div class="recent__dialog">
+                  <div class="recent__new-messages">11</div>
+                  <div class="recent__dialog-inner">
+                    <div class="avatar">
+                      <img src='https://s3-alpha-sig.figma.com/img/ad5e/ddfd/deaf3fa335599fd50734afb8e30e4bc4?Expires=1619395200&Signature=U2vlXNkJ3jZ7DhyvNIaxx5m1VE-iIS6QyPGZpShMciNso-yr4GAA63wlvevssaYCZ8mrW-0HitYr-zMsmN9yxMgn0kK-6gNR0OAvV4DF8NIOgbNsjG9IdpqiGwq97uRkQYODLYODiMbWZL3omE33c2AIyAVdZKYae5-1IQtZhI6grAhV~EC1RggzWtsIvJrLz0~U9wx0wD-Sj6OjpCC9sY0nfQp0eKTAFFbfAH6o6x-AkNlDYcidpWr2YhFD4fZRLu20kgpBl~fQ8kjhYj3q76A52dAbVuxO~eEp8ktRW9DNNW5M~b7w1WcLikM-C3FhJTfXisLvzbUR017RYz03Nw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA' alt='аватар' />
+                    </div>
+                    <div class="recent__dialog-wrap">
+                      <div class="recent__message-info">
+                        <div class="recent__sender-name">Диденко Дмитрий</div>
+                        <div class="recent__date">21.01.2021</div>
+                      </div>
+                      <div class="recent__short-message">
+                        В своём стремлении улучшить пользовательский стремлении улучшить пользовательский стремлении улучшить пользовательский
+                      </div>
+                    </div>
+                  </div> <!-- /recent__dialog-inner -->
+                </div> <!-- /recent__dialog -->
+              </li> <!-- /recent__dialog-card -->
+  
+            </ul>
+          </div> <!-- /recent -->
 
-            <li class="recent__dialog-card">
-              <input class="checkbox" type="checkbox" disabled />
-              <div class="recent__dialog">
-                <div class="recent__new-messages">11</div>
-                <div class="recent__dialog-inner">
-                  <div class="recent__avatar">
-                    <img src='https://s3-alpha-sig.figma.com/img/ad5e/ddfd/deaf3fa335599fd50734afb8e30e4bc4?Expires=1619395200&Signature=U2vlXNkJ3jZ7DhyvNIaxx5m1VE-iIS6QyPGZpShMciNso-yr4GAA63wlvevssaYCZ8mrW-0HitYr-zMsmN9yxMgn0kK-6gNR0OAvV4DF8NIOgbNsjG9IdpqiGwq97uRkQYODLYODiMbWZL3omE33c2AIyAVdZKYae5-1IQtZhI6grAhV~EC1RggzWtsIvJrLz0~U9wx0wD-Sj6OjpCC9sY0nfQp0eKTAFFbfAH6o6x-AkNlDYcidpWr2YhFD4fZRLu20kgpBl~fQ8kjhYj3q76A52dAbVuxO~eEp8ktRW9DNNW5M~b7w1WcLikM-C3FhJTfXisLvzbUR017RYz03Nw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA' alt='аватар' />
-                  </div>
-                  <div class="recent__dialog-wrap">
-                    <div class="recent__message-info">
-                      <div class="recent__sender-name">Диденко Дмитрий</div>
-                      <div class="recent__date">21.01.2021</div>
-                    </div>
-                    <div class="recent__short-message">
-                      В своём стремлении улучшить пользовательский стремлении улучшить пользовательский стремлении улучшить пользовательский
-                    </div>
-                  </div>
-                </div> <!-- /recent__dialog-inner -->
-              </div> <!-- /recent__dialog -->
-            </li> <!-- /recent__dialog-card -->
-            
-            <li class="recent__dialog-card">
-              <input class="checkbox" type="checkbox" disabled />
-              <div class="recent__dialog">
-                <div class="recent__new-messages">11</div>
-                <div class="recent__dialog-inner">
-                  <div class="recent__avatar">
-                    <img src='https://s3-alpha-sig.figma.com/img/ad5e/ddfd/deaf3fa335599fd50734afb8e30e4bc4?Expires=1619395200&Signature=U2vlXNkJ3jZ7DhyvNIaxx5m1VE-iIS6QyPGZpShMciNso-yr4GAA63wlvevssaYCZ8mrW-0HitYr-zMsmN9yxMgn0kK-6gNR0OAvV4DF8NIOgbNsjG9IdpqiGwq97uRkQYODLYODiMbWZL3omE33c2AIyAVdZKYae5-1IQtZhI6grAhV~EC1RggzWtsIvJrLz0~U9wx0wD-Sj6OjpCC9sY0nfQp0eKTAFFbfAH6o6x-AkNlDYcidpWr2YhFD4fZRLu20kgpBl~fQ8kjhYj3q76A52dAbVuxO~eEp8ktRW9DNNW5M~b7w1WcLikM-C3FhJTfXisLvzbUR017RYz03Nw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA' alt='аватар' />
-                  </div>
-                  <div class="recent__dialog-wrap">
-                    <div class="recent__message-info">
-                      <div class="recent__sender-name">Диденко Дмитрий</div>
-                      <div class="recent__date">21.01.2021</div>
-                    </div>
-                    <div class="recent__short-message">
-                      В своём стремлении улучшить пользовательский стремлении улучшить пользовательский стремлении улучшить пользовательский
-                    </div>
-                  </div>
-                </div> <!-- /recent__dialog-inner -->
-              </div> <!-- /recent__dialog -->
-            </li> <!-- /recent__dialog-card -->
+          <div class="chat">
 
-            <li class="recent__dialog-card">
-              <input class="checkbox" type="checkbox" disabled />
-              <div class="recent__dialog">
-                <div class="recent__new-messages">11</div>
-                <div class="recent__dialog-inner">
-                  <div class="recent__avatar">
-                    <img src='https://s3-alpha-sig.figma.com/img/ad5e/ddfd/deaf3fa335599fd50734afb8e30e4bc4?Expires=1619395200&Signature=U2vlXNkJ3jZ7DhyvNIaxx5m1VE-iIS6QyPGZpShMciNso-yr4GAA63wlvevssaYCZ8mrW-0HitYr-zMsmN9yxMgn0kK-6gNR0OAvV4DF8NIOgbNsjG9IdpqiGwq97uRkQYODLYODiMbWZL3omE33c2AIyAVdZKYae5-1IQtZhI6grAhV~EC1RggzWtsIvJrLz0~U9wx0wD-Sj6OjpCC9sY0nfQp0eKTAFFbfAH6o6x-AkNlDYcidpWr2YhFD4fZRLu20kgpBl~fQ8kjhYj3q76A52dAbVuxO~eEp8ktRW9DNNW5M~b7w1WcLikM-C3FhJTfXisLvzbUR017RYz03Nw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA' alt='аватар' />
-                  </div>
-                  <div class="recent__dialog-wrap">
-                    <div class="recent__message-info">
-                      <div class="recent__sender-name">Диденко Дмитрий</div>
-                      <div class="recent__date">21.01.2021</div>
-                    </div>
-                    <div class="recent__short-message">
-                      В своём стремлении улучшить пользовательский стремлении улучшить пользовательский стремлении улучшить пользовательский
-                    </div>
-                  </div>
-                </div> <!-- /recent__dialog-inner -->
-              </div> <!-- /recent__dialog -->
-            </li> <!-- /recent__dialog-card -->
-            
-            <li class="recent__dialog-card">
-              <input class="checkbox" type="checkbox" disabled />
-              <div class="recent__dialog">
-                <div class="recent__new-messages">11</div>
-                <div class="recent__dialog-inner">
-                  <div class="recent__avatar">
-                    <img src='https://s3-alpha-sig.figma.com/img/ad5e/ddfd/deaf3fa335599fd50734afb8e30e4bc4?Expires=1619395200&Signature=U2vlXNkJ3jZ7DhyvNIaxx5m1VE-iIS6QyPGZpShMciNso-yr4GAA63wlvevssaYCZ8mrW-0HitYr-zMsmN9yxMgn0kK-6gNR0OAvV4DF8NIOgbNsjG9IdpqiGwq97uRkQYODLYODiMbWZL3omE33c2AIyAVdZKYae5-1IQtZhI6grAhV~EC1RggzWtsIvJrLz0~U9wx0wD-Sj6OjpCC9sY0nfQp0eKTAFFbfAH6o6x-AkNlDYcidpWr2YhFD4fZRLu20kgpBl~fQ8kjhYj3q76A52dAbVuxO~eEp8ktRW9DNNW5M~b7w1WcLikM-C3FhJTfXisLvzbUR017RYz03Nw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA' alt='аватар' />
-                  </div>
-                  <div class="recent__dialog-wrap">
-                    <div class="recent__message-info">
-                      <div class="recent__sender-name">Диденко Дмитрий</div>
-                      <div class="recent__date">21.01.2021</div>
-                    </div>
-                    <div class="recent__short-message">
-                      В своём стремлении улучшить пользовательский стремлении улучшить пользовательский стремлении улучшить пользовательский
-                    </div>
-                  </div>
-                </div> <!-- /recent__dialog-inner -->
-              </div> <!-- /recent__dialog -->
-            </li> <!-- /recent__dialog-card -->
-            <li class="recent__dialog-card">
-              <input class="checkbox" type="checkbox" disabled />
-              <div class="recent__dialog">
-                <div class="recent__new-messages">11</div>
-                <div class="recent__dialog-inner">
-                  <div class="recent__avatar">
-                    <img src='https://s3-alpha-sig.figma.com/img/ad5e/ddfd/deaf3fa335599fd50734afb8e30e4bc4?Expires=1619395200&Signature=U2vlXNkJ3jZ7DhyvNIaxx5m1VE-iIS6QyPGZpShMciNso-yr4GAA63wlvevssaYCZ8mrW-0HitYr-zMsmN9yxMgn0kK-6gNR0OAvV4DF8NIOgbNsjG9IdpqiGwq97uRkQYODLYODiMbWZL3omE33c2AIyAVdZKYae5-1IQtZhI6grAhV~EC1RggzWtsIvJrLz0~U9wx0wD-Sj6OjpCC9sY0nfQp0eKTAFFbfAH6o6x-AkNlDYcidpWr2YhFD4fZRLu20kgpBl~fQ8kjhYj3q76A52dAbVuxO~eEp8ktRW9DNNW5M~b7w1WcLikM-C3FhJTfXisLvzbUR017RYz03Nw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA' alt='аватар' />
-                  </div>
-                  <div class="recent__dialog-wrap">
-                    <div class="recent__message-info">
-                      <div class="recent__sender-name">Диденко Дмитрий</div>
-                      <div class="recent__date">21.01.2021</div>
-                    </div>
-                    <div class="recent__short-message">
-                      В своём стремлении улучшить пользовательский стремлении улучшить пользовательский стремлении улучшить пользовательский
-                    </div>
-                  </div>
-                </div> <!-- /recent__dialog-inner -->
-              </div> <!-- /recent__dialog -->
-            </li> <!-- /recent__dialog-card -->
-            
-            <li class="recent__dialog-card">
-              <input class="checkbox" type="checkbox" disabled />
-              <div class="recent__dialog">
-                <div class="recent__new-messages">11</div>
-                <div class="recent__dialog-inner">
-                  <div class="recent__avatar">
-                    <img src='https://s3-alpha-sig.figma.com/img/ad5e/ddfd/deaf3fa335599fd50734afb8e30e4bc4?Expires=1619395200&Signature=U2vlXNkJ3jZ7DhyvNIaxx5m1VE-iIS6QyPGZpShMciNso-yr4GAA63wlvevssaYCZ8mrW-0HitYr-zMsmN9yxMgn0kK-6gNR0OAvV4DF8NIOgbNsjG9IdpqiGwq97uRkQYODLYODiMbWZL3omE33c2AIyAVdZKYae5-1IQtZhI6grAhV~EC1RggzWtsIvJrLz0~U9wx0wD-Sj6OjpCC9sY0nfQp0eKTAFFbfAH6o6x-AkNlDYcidpWr2YhFD4fZRLu20kgpBl~fQ8kjhYj3q76A52dAbVuxO~eEp8ktRW9DNNW5M~b7w1WcLikM-C3FhJTfXisLvzbUR017RYz03Nw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA' alt='аватар' />
-                  </div>
-                  <div class="recent__dialog-wrap">
-                    <div class="recent__message-info">
-                      <div class="recent__sender-name">Диденко Дмитрий</div>
-                      <div class="recent__date">21.01.2021</div>
-                    </div>
-                    <div class="recent__short-message">
-                      В своём стремлении улучшить пользовательский стремлении улучшить пользовательский стремлении улучшить пользовательский
-                    </div>
-                  </div>
-                </div> <!-- /recent__dialog-inner -->
-              </div> <!-- /recent__dialog -->
-            </li> <!-- /recent__dialog-card -->
-            <li class="recent__dialog-card">
-              <input class="checkbox" type="checkbox" disabled />
-              <div class="recent__dialog">
-                <div class="recent__new-messages">11</div>
-                <div class="recent__dialog-inner">
-                  <div class="recent__avatar">
-                    <img src='https://s3-alpha-sig.figma.com/img/ad5e/ddfd/deaf3fa335599fd50734afb8e30e4bc4?Expires=1619395200&Signature=U2vlXNkJ3jZ7DhyvNIaxx5m1VE-iIS6QyPGZpShMciNso-yr4GAA63wlvevssaYCZ8mrW-0HitYr-zMsmN9yxMgn0kK-6gNR0OAvV4DF8NIOgbNsjG9IdpqiGwq97uRkQYODLYODiMbWZL3omE33c2AIyAVdZKYae5-1IQtZhI6grAhV~EC1RggzWtsIvJrLz0~U9wx0wD-Sj6OjpCC9sY0nfQp0eKTAFFbfAH6o6x-AkNlDYcidpWr2YhFD4fZRLu20kgpBl~fQ8kjhYj3q76A52dAbVuxO~eEp8ktRW9DNNW5M~b7w1WcLikM-C3FhJTfXisLvzbUR017RYz03Nw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA' alt='аватар' />
-                  </div>
-                  <div class="recent__dialog-wrap">
-                    <div class="recent__message-info">
-                      <div class="recent__sender-name">Диденко Дмитрий</div>
-                      <div class="recent__date">21.01.2021</div>
-                    </div>
-                    <div class="recent__short-message">
-                      В своём стремлении улучшить пользовательский стремлении улучшить пользовательский стремлении улучшить пользовательский
-                    </div>
-                  </div>
-                </div> <!-- /recent__dialog-inner -->
-              </div> <!-- /recent__dialog -->
-            </li> <!-- /recent__dialog-card -->
-            
-            <li class="recent__dialog-card">
-              <input class="checkbox" type="checkbox" disabled />
-              <div class="recent__dialog">
-                <div class="recent__new-messages">11</div>
-                <div class="recent__dialog-inner">
-                  <div class="recent__avatar">
-                    <img src='https://s3-alpha-sig.figma.com/img/ad5e/ddfd/deaf3fa335599fd50734afb8e30e4bc4?Expires=1619395200&Signature=U2vlXNkJ3jZ7DhyvNIaxx5m1VE-iIS6QyPGZpShMciNso-yr4GAA63wlvevssaYCZ8mrW-0HitYr-zMsmN9yxMgn0kK-6gNR0OAvV4DF8NIOgbNsjG9IdpqiGwq97uRkQYODLYODiMbWZL3omE33c2AIyAVdZKYae5-1IQtZhI6grAhV~EC1RggzWtsIvJrLz0~U9wx0wD-Sj6OjpCC9sY0nfQp0eKTAFFbfAH6o6x-AkNlDYcidpWr2YhFD4fZRLu20kgpBl~fQ8kjhYj3q76A52dAbVuxO~eEp8ktRW9DNNW5M~b7w1WcLikM-C3FhJTfXisLvzbUR017RYz03Nw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA' alt='аватар' />
-                  </div>
-                  <div class="recent__dialog-wrap">
-                    <div class="recent__message-info">
-                      <div class="recent__sender-name">Диденко Дмитрий</div>
-                      <div class="recent__date">21.01.2021</div>
-                    </div>
-                    <div class="recent__short-message">
-                      В своём стремлении улучшить пользовательский стремлении улучшить пользовательский стремлении улучшить пользовательский
-                    </div>
-                  </div>
-                </div> <!-- /recent__dialog-inner -->
-              </div> <!-- /recent__dialog -->
-            </li> <!-- /recent__dialog-card -->
-            <li class="recent__dialog-card">
-              <input class="checkbox" type="checkbox" disabled />
-              <div class="recent__dialog">
-                <div class="recent__new-messages">11</div>
-                <div class="recent__dialog-inner">
-                  <div class="recent__avatar">
-                    <img src='https://s3-alpha-sig.figma.com/img/ad5e/ddfd/deaf3fa335599fd50734afb8e30e4bc4?Expires=1619395200&Signature=U2vlXNkJ3jZ7DhyvNIaxx5m1VE-iIS6QyPGZpShMciNso-yr4GAA63wlvevssaYCZ8mrW-0HitYr-zMsmN9yxMgn0kK-6gNR0OAvV4DF8NIOgbNsjG9IdpqiGwq97uRkQYODLYODiMbWZL3omE33c2AIyAVdZKYae5-1IQtZhI6grAhV~EC1RggzWtsIvJrLz0~U9wx0wD-Sj6OjpCC9sY0nfQp0eKTAFFbfAH6o6x-AkNlDYcidpWr2YhFD4fZRLu20kgpBl~fQ8kjhYj3q76A52dAbVuxO~eEp8ktRW9DNNW5M~b7w1WcLikM-C3FhJTfXisLvzbUR017RYz03Nw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA' alt='аватар' />
-                  </div>
-                  <div class="recent__dialog-wrap">
-                    <div class="recent__message-info">
-                      <div class="recent__sender-name">Диденко Дмитрий</div>
-                      <div class="recent__date">21.01.2021</div>
-                    </div>
-                    <div class="recent__short-message">
-                      В своём стремлении улучшить пользовательский стремлении улучшить пользовательский стремлении улучшить пользовательский
-                    </div>
-                  </div>
-                </div> <!-- /recent__dialog-inner -->
-              </div> <!-- /recent__dialog -->
-            </li> <!-- /recent__dialog-card -->
-            
-            <li class="recent__dialog-card">
-              <input class="checkbox" type="checkbox" disabled />
-              <div class="recent__dialog">
-                <div class="recent__new-messages">11</div>
-                <div class="recent__dialog-inner">
-                  <div class="recent__avatar">
-                    <img src='https://s3-alpha-sig.figma.com/img/ad5e/ddfd/deaf3fa335599fd50734afb8e30e4bc4?Expires=1619395200&Signature=U2vlXNkJ3jZ7DhyvNIaxx5m1VE-iIS6QyPGZpShMciNso-yr4GAA63wlvevssaYCZ8mrW-0HitYr-zMsmN9yxMgn0kK-6gNR0OAvV4DF8NIOgbNsjG9IdpqiGwq97uRkQYODLYODiMbWZL3omE33c2AIyAVdZKYae5-1IQtZhI6grAhV~EC1RggzWtsIvJrLz0~U9wx0wD-Sj6OjpCC9sY0nfQp0eKTAFFbfAH6o6x-AkNlDYcidpWr2YhFD4fZRLu20kgpBl~fQ8kjhYj3q76A52dAbVuxO~eEp8ktRW9DNNW5M~b7w1WcLikM-C3FhJTfXisLvzbUR017RYz03Nw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA' alt='аватар' />
-                  </div>
-                  <div class="recent__dialog-wrap">
-                    <div class="recent__message-info">
-                      <div class="recent__sender-name">Диденко Дмитрий</div>
-                      <div class="recent__date">21.01.2021</div>
-                    </div>
-                    <div class="recent__short-message">
-                      В своём стремлении улучшить пользовательский стремлении улучшить пользовательский стремлении улучшить пользовательский
-                    </div>
-                  </div>
-                </div> <!-- /recent__dialog-inner -->
-              </div> <!-- /recent__dialog -->
-            </li> <!-- /recent__dialog-card -->
+            <div class="chat__top-block">
+              <div class="chat__product-photo">
+                <img src="https://s3-alpha-sig.figma.com/img/a319/d7f3/0ba080fb0e8c2df7e403d147da9fd06d?Expires=1619395200&Signature=EP1koL8hye~NxMAt0XqHnI6rJnJiP0qvdRbwJysn2n2JS6mKFgol7ZNOpS2qH1iCaQ9JmrPSUUBJJIdblQQsQRQ7~m6~5rYQvbObqQOOXqI7fj8mBoZtcCHPG4QClWilwE~41UZedI6XDuMQn1DdRL3UuSvdalxX-JOmwSG5Pa7a-rlmTiHwzVbsgRdHy4Gbl8HOXWO4NbD6ZEGn8-PpBFgTMfWY-1XXL-jjunX1mMD5oXI8N8nD0zf9ybWA7W8Hpvz9z1hNCipE7cKoPGNrOCuB~RZNqgHZr3WeSMHGQLOipybsSi8uiTdzJ-RdMRQT3Y9CEA~CVhcFuzG8f-BVyw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="фото товара" />
+              </div>
 
-            <li class="recent__dialog-card">
-              <input class="checkbox" type="checkbox" disabled />
-              <div class="recent__dialog">
-                <div class="recent__new-messages">11</div>
-                <div class="recent__dialog-inner">
-                  <div class="recent__avatar">
-                    <img src='https://s3-alpha-sig.figma.com/img/ad5e/ddfd/deaf3fa335599fd50734afb8e30e4bc4?Expires=1619395200&Signature=U2vlXNkJ3jZ7DhyvNIaxx5m1VE-iIS6QyPGZpShMciNso-yr4GAA63wlvevssaYCZ8mrW-0HitYr-zMsmN9yxMgn0kK-6gNR0OAvV4DF8NIOgbNsjG9IdpqiGwq97uRkQYODLYODiMbWZL3omE33c2AIyAVdZKYae5-1IQtZhI6grAhV~EC1RggzWtsIvJrLz0~U9wx0wD-Sj6OjpCC9sY0nfQp0eKTAFFbfAH6o6x-AkNlDYcidpWr2YhFD4fZRLu20kgpBl~fQ8kjhYj3q76A52dAbVuxO~eEp8ktRW9DNNW5M~b7w1WcLikM-C3FhJTfXisLvzbUR017RYz03Nw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA' alt='аватар' />
-                  </div>
-                  <div class="recent__dialog-wrap">
-                    <div class="recent__message-info">
-                      <div class="recent__sender-name">Диденко Дмитрий</div>
-                      <div class="recent__date">21.01.2021</div>
-                    </div>
-                    <div class="recent__short-message">
-                      В своём стремлении улучшить пользовательский стремлении улучшить пользовательский стремлении улучшить пользовательский
-                    </div>
-                  </div>
-                </div> <!-- /recent__dialog-inner -->
-              </div> <!-- /recent__dialog -->
-            </li> <!-- /recent__dialog-card -->
+              <div class="chat__top-block-inner">
+                <div class="chat__short-info">
+                  <div class="chat__name">Смоленко Дмитрий</div>
+                  <a href="#" class="chat__product-name">Стеклоблок Basic 190x190x80 1908 W зеленый</a>
+                </div>
+                <div class="chat__options">
+                  <img class="chat__favorite-btn" src="./assets/images/favorite.svg" alt="избранное" />
+                  <img class="chat__archive-btn" src="./assets/images/archive.svg" alt="архив" />
+                </div>
+              </div>
 
-          </ul>
-        </div> <!-- /recent -->
-      </div> <!-- /chat__inner -->
+            </div> <!-- /chat__top-block -->
+
+          </div> <!-- /chat -->
+
+        </div> <!-- /chat-page__main-wrap -->
+      </div> <!-- /chat-page__inner -->
     </div> <!-- /container -->
-  </div> <!-- /chat -->
+  </div> <!-- /chat-page -->
 
 </body>
 </html>
