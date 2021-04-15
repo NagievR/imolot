@@ -2,7 +2,7 @@
   width: 430px;
   flex-shrink: 0;
   margin-right: 50px;
-
+  
   &__dialog-list {
     margin: 0;
     padding: 0;
@@ -63,6 +63,9 @@
     display: none;
   }
 
+  &__avatar {
+    margin-right: 10px;
+  }
 
   &__dialog-wrap {
     width: 100%;
@@ -117,4 +120,3 @@
     }
   }
 }
-
