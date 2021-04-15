@@ -64,7 +64,7 @@
 .recent {
   width: 430px;
   flex-shrink: 0;
-  margin-right: 35px;
+  margin-right: 50px;
 }
 
 .recent__dialog-list {
@@ -236,8 +236,8 @@
 }
 
 .chat__field {
-  max-height: 590px;
   overflow-y: auto;
+  max-height: 566px;
   scrollbar-width: thin;
   scrollbar-color: #E0E0E0 transparent;
 }
@@ -298,7 +298,6 @@
   position: relative;
   display: flex;
   align-items: flex-end;
-  min-width: 228px;
   max-width: 440px;
   box-sizing: border-box;
   margin-bottom: 40px;
@@ -312,17 +311,34 @@
   right: 0;
 }
 
-.chat__message-text {
+.chat__message-body {
   border: 1px solid #E0E0E0;
   position: relative;
   padding: 10px 15px;
   border-radius: 4px;
   font-size: 16px;
+  box-sizing: border-box;
 }
 
-.chat__message-text img {
+.chat__message-body img {
   width: 100%;
   cursor: pointer;
+}
+
+.chat__textarea-wrap {
+  position: relative;
+}
+
+.chat__textarea-wrap img {
+  cursor: pointer;
+}
+
+.chat__send {
+  position: absolute;
+  width: 26px;
+  height: 25px;
+  right: 10px;
+  bottom: 15px;
 }
 
 .chat__textarea {
@@ -330,8 +346,45 @@
   border-radius: 4px;
   resize: none;
   outline: none;
-  width: calc(100% - 65px);
   padding: 15px 50px 15px 15px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 50px;
+  margin-top: 30px;
+}
+
+.chat__icon-wrap {
+  background-color: #2F2F59;
+  height: 31px;
+  width: 31px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.chat__icon-wrap img {
+  height: 15px;
+}
+
+.chat__file-wrap {
+  display: flex;
+  cursor: pointer;
+}
+
+.chat__file-name {
+  font-size: 16px;
+}
+
+.chat__file-size {
+  font-size: 10px;
+}
+
+.chat__attach-file {
+  position: absolute;
+  bottom: 15px;
+  left: -30px;
 }
 
 .avatar {

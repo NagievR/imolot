@@ -27,8 +27,9 @@
   }
   
   &__field {
-    max-height: 590px;
+    // max-height: 590px;
     overflow-y: auto;
+    max-height: 566px;
     &::-webkit-scrollbar{
       width: 3px;
       background-color: #E0E0E0;
@@ -89,7 +90,6 @@
     position: relative;
     display: flex;
     align-items: flex-end;
-    min-width: 228px;
     max-width: 440px;
     box-sizing: border-box;
     margin-bottom: 40px;
@@ -103,12 +103,13 @@
     right: 0;
   }
 
-  &__message-text {
+  &__message-body {
     border: 1px solid #E0E0E0;
     position: relative;
     padding: 10px 15px;
     border-radius: 4px;
     font-size: 16px;
+    box-sizing: border-box;
 
     img {
       width: 100%;
@@ -116,12 +117,65 @@
     }
   }
 
+  &__textarea-wrap {
+    position: relative;
+    
+    img {
+      cursor: pointer;
+    }
+  }
+
+  &__send {
+    position: absolute;
+    width: 26px;
+    height: 25px;
+    right: 10px;
+    bottom: 15px;
+  }
+
   &__textarea {
     border: 1px #E0E0E0 solid;
     border-radius: 4px;
     resize: none;
     outline: none;
-    width: calc(100% - 65px);
     padding: 15px 50px 15px 15px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+  }
+
+  &__icon-wrap {
+    background-color: #2F2F59;
+    height: 31px;
+    width: 31px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    
+    img {
+      height: 15px;
+    }
+  }
+
+  &__file-wrap {
+    display: flex;
+    cursor: pointer;
+  }
+
+  &__file-name {
+    font-size: 16px;
+  }
+
+  &__file-size {
+    font-size: 10px;
+  }
+
+  &__attach-file {
+    position: absolute;
+    bottom: 15px;
+    left: -30px;
   }
 }
