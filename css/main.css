@@ -313,16 +313,35 @@
 
 .chat__message-body {
   border: 1px solid #E0E0E0;
-  position: relative;
   padding: 10px 15px;
   border-radius: 4px;
+  border-bottom-left-radius: 0;
   font-size: 16px;
   box-sizing: border-box;
+  position: relative;
 }
 
 .chat__message-body img {
   width: 100%;
   cursor: pointer;
+}
+
+.chat__message-body::before {
+  content: '';
+  border-left: 7px solid transparent;
+  border-bottom: 8px solid #E0E0E0;
+  position: absolute;
+  bottom: -1px;
+  left: -7px;
+}
+
+.chat__message-body::after {
+  content: '';
+  border-left: 7px solid transparent;
+  border-bottom: 8px solid white;
+  position: absolute;
+  bottom: 0px;
+  left: -5px;
 }
 
 .chat__textarea-wrap {
