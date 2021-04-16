@@ -10,8 +10,12 @@
   font-size: 48px;
 }
 
-.chat-page__main-wrap {
+.chat-page__main {
   display: flex;
+}
+
+.chat-page__recent {
+  margin-right: 50px;
 }
 
 .chat-page__search-input {
@@ -64,7 +68,6 @@
 .recent {
   width: 430px;
   flex-shrink: 0;
-  margin-right: 50px;
 }
 
 .recent__dialog-list {
@@ -112,7 +115,7 @@
   cursor: pointer;
 }
 
-.recent__new-messages {
+.recent__new-messages-count {
   position: absolute;
   background-color: #FFC813;
   font-size: 12px;
@@ -149,7 +152,7 @@
   display: flex;
 }
 
-.recent__message-info {
+.recent__dialog-info {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
@@ -164,7 +167,7 @@
   width: 270px;
 }
 
-.new-message .recent__new-messages {
+.new-message .recent__new-messages-count {
   display: flex;
 }
 
@@ -223,6 +226,23 @@
   margin-bottom: 30px;
 }
 
+.chat__options img {
+  margin-right: 20px;
+  cursor: pointer;
+  width: 20px;
+}
+
+.chat__options img:last-child {
+  margin-right: 0;
+}
+
+.chat__top-block-info {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .chat__product-photo {
   width: 64px;
   height: 48px;
@@ -272,23 +292,6 @@
   color: #F2994A;
   border-bottom: 1px solid #F2994A;
   cursor: pointer;
-}
-
-.chat__options img {
-  margin-right: 20px;
-  cursor: pointer;
-  width: 20px;
-}
-
-.chat__options img:last-child {
-  margin-right: 0;
-}
-
-.chat__top-block-inner {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .chat__avatar-smaller {

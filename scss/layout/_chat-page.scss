@@ -5,8 +5,12 @@
     font-size: 48px;
   }
 
-  &__main-wrap {
+  &__main {
     display: flex;
+  }
+
+  &__recent {
+    margin-right: 50px;
   }
 
   &__search-input {

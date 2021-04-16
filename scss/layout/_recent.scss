@@ -1,7 +1,6 @@
 .recent {
   width: 430px;
   flex-shrink: 0;
-  margin-right: 50px;
   
   &__dialog-list {
     margin: 0;
@@ -48,7 +47,7 @@
     cursor: pointer;
   }
 
-  &__new-messages {
+  &__new-messages-count {
     position: absolute;
     background-color: #FFC813;
     font-size: 12px;
@@ -85,7 +84,7 @@
     display: flex;
   }
 
-  &__message-info {
+  &__dialog-info {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
@@ -103,7 +102,7 @@
 
 .new-message {
   .recent {
-    &__new-messages {
+    &__new-messages-count {
       display: flex;
     }
     
